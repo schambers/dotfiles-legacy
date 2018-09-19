@@ -23,6 +23,9 @@ alias gls='git ls'
 alias glg='git lg'
 alias gst='git st'
 
+# tmux
+alias mux='tmux'
+
 # grep colors alias
 alias grep='fgrep --color=auto'
 
