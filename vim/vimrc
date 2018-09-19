@@ -1,0 +1,8 @@
+call pathogen#infect()
+call pathogen#helptags()
+syntax on
+filetype plugin indent on
+colorscheme dracula
+set number
+set ttymouse=xterm2
+set mouse=a
