@@ -133,8 +133,8 @@ RED='\[\033[1;31m\]'
 GREEN='\[\033[0;32m\]'
 YELLOW='\[\033[0;33m\]'
 NO_COLOR='\[\033[0m\]'
-#export PS1="\n\[\033[32m\]\w\[\033[33m\] \$(parse_git_branch)\[\033[00m\] $ "
-# Renders the promot. If in an ssh session, appends @{hostname}
+
+# Renders a different prompt when in an SSH session. Appends @{hostname} to the session
 if [ -n "$SSH_CLIENT" ]; then
    export PS1="\n\[\033[32m\]\w\[\033[33m\] \$(parse_git_branch)\[\033[00m\]\[\e[31m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] $ "
 else
