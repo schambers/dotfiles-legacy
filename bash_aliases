@@ -26,9 +26,6 @@ alias gst='git st'
 # grep colors alias
 alias grep='fgrep --color=auto'
 
-# ant aliases
-alias cov='open_coverage'
-
 # grep aliases
 alias fif='find_in_files'
 

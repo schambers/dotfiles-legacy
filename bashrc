@@ -95,9 +95,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.nvm/nvm.sh
-export PYTHONPATH=$HOME/indeed/shield/products:$PYTHONPATH
-export PYTHONPATH=$HOME/indeed/shield/products/pyprotos/clients:$PYTHONPATH
-export PROMPT_COMMAND=$( echo "${PROMPT_COMMAND//_pyenv_virtualenv_hook;}")
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -147,12 +144,6 @@ fi
 # Webpack dev settings
 export DEVELOP_ENV=1;
 export USE_WEBPACK_DEV_SERVER=1;
-export INDEED_PROJECT_DIR=$HOME/indeed;
-
-open_coverage() {
-  ant clean test coverage
-  google-chrome build/coverage/coverage.html
-}
 
 find_in_files() {
   grep -rnw $1 -e $2
