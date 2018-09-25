@@ -14,3 +14,5 @@ fi
 if [ "Darwin" = "$(uname -s)" ]; then
     [ -s "$HOME/.bashrc" ] && . "$HOME/.bashrc"
 fi
+
+TERM=xterm-256color
