@@ -6,3 +6,6 @@ colorscheme dracula
 set number
 set ttymouse=xterm2
 set mouse=a
+set t_Co=256
+set background=dark
+highlight Normal ctermbg=NONE
