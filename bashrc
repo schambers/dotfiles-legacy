@@ -152,3 +152,6 @@ find_in_files() {
 # tmux, tmuxinator settings
 export EDITOR='vim'
 source ~/.tmux/tmuxinator.bash
+
+# Add miniconda to path
+export PATH="/Users/sechambers/miniconda2/bin:$PATH"
