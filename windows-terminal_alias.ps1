@@ -43,8 +43,8 @@ New-Alias -Name f -Value Get-GitFetch -Force -Option AllScope
 
 # git branch args
 # usage: gb new-branch
-function Get-GitBranch { & git branch $args }
-New-Alias -Name gb -Value Get-GitBranch -Force -Option AllScope
+function Get-GB{ & git branch $args }
+New-Alias -Name gb -Value Get-GB -Force -Option AllScope
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
