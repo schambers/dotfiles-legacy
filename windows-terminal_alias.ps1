@@ -9,8 +9,8 @@
 
 # git status $args
 # usage: s
-function Get-GitStatus { & git status $args }
-New-Alias -Name s -Value Get-GitStatus
+function Get-GS { & git status $args }
+New-Alias -Name s -Value Get-GS
 
 # git commit $args
 # usage: c "commit message"
@@ -42,6 +42,16 @@ function Get-GitFetch { & git fetch $args }
 New-Alias -Name f -Value Get-GitFetch -Force -Option AllScope
 
 # git branch args
-# usage: b new-branch
+# usage: gb new-branch
 function Get-GitBranch { & git branch $args }
-New-Alias -Name b -Value Get-GitBranch -Force -Option AllScope
+New-Alias -Name gb -Value Get-GitBranch -Force -Option AllScope
+
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme Agnoster
