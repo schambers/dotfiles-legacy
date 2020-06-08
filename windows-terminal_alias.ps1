@@ -30,7 +30,7 @@ New-Alias -Name ga -Value Get-GitAdd -Force -Option AllScope
 # git push
 # usage: gp
 function Get-GitPush { & git push $args }
-New-Alias -Name gps -Value Get-GitPush -Force -Option AllScope
+New-Alias -Name gp -Value Get-GitPush -Force -Option AllScope
 
 # git pull
 # usage: gpu
